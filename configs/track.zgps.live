@@ -1,0 +1,4 @@
+export RECIPES=(FAIL2BAN REDIS)
+
+export FAIL2BAN=track.zgps.live
+export REDIS=track.zgps.live

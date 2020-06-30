@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+apt-get install -y fail2ban
+
+touch /etc/fail2ban/fail.local
+if ! diff files/jail.local /etc/fail2ban >> /dev/null; then
+	cp files/jail.local /etc/fail2ban/
+	systemctl restart fail2ban.service
+fi

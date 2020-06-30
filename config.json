@@ -1,0 +1,5 @@
+{
+	"logs": "artifacts/logs",
+	"cache": "artifacts/cache",
+	"force": "no"
+}
